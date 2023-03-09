@@ -1,0 +1,262 @@
+.order{
+    position: relative;
+}
+.order_wrapper{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0 ;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    padding: 16px 10px;
+
+}
+.order_open .order_wrap_list{
+    margin-bottom: 8px;
+}
+.order_wrap_list{
+    display:none;
+
+}
+.order__empty{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+.order_open .order_wrap_list{
+    display: block;
+}
+.order_wrap-title{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    outline: none;
+}
+.order_wrap-title::after{
+    content:'';
+    position: absolute;
+    outline: 3px solid transparent;
+    inset: 0;/*а інсет 0 рівняється padding left rigth top botton*/
+    border-radius: 12px;
+    pointer-events: none;
+
+}
+.order_wrap-title:focus-visible::after {
+    outline-color: 3px solid  #FFAB08;
+}
+.order_count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:400px;
+    font-size:10px;
+    line-height: 14px;
+    width: 32px; 
+    height: 16px;
+    background: #f2f2f3;
+    border-radius: 6px;
+    
+
+
+
+}
+.order_title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;/*встановлює розміри простору між рядками*/
+}
+
+
+ .order_list{
+    margin-bottom: 13px;
+
+ }
+ .order_total{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;/*щільність тексту або жирність*/
+    line-height: 130% ;
+    margin-bottom: 19px;
+ }
+ .order__submit{
+    padding: 9px;
+    width: 100%;
+    background:#f86310;
+    color:#F2F2F3;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height:100%;
+    margin-bottom: 8px;
+    transition: transform .1s ease, background-color .3s ease-in-out;
+
+
+
+ }
+ 
+.order__submit:hover{
+    background-color: #ffab08;
+}
+.order__submit:focus-visible{
+    background-color: #f86310;
+
+}
+.order__submit:active{
+    transform:translate(1px,2px) ;
+
+}
+.order__submit:disabled{
+    background-color: #f9f9f9;
+    color:#acacac
+}
+@supports not selector(:focus-visible){
+    .order__submit:focus{
+        background-color: #f86310;
+
+    }
+}
+ 
+.product__edd:hover{
+    background-color: #ffab08;
+}
+.product__edd:focus-visible{
+    background-color: #f86310;
+
+}
+.product__edd:active{
+    transform:translate(1px,2px) ;
+
+}
+.product__edd:disabled{
+    background-color: #f9f9f9;
+    color:#acacac
+}
+@supports not selector(:focus-visible){
+    .product__edd:focus{
+        background-color: #f86310;
+
+    }
+}
+ .order__apeal{
+    min-height: 24px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    padding-left: 32px; /*відступ для іконки*/
+    background:url('../img/Доставка.png')left/24px no-repeat
+
+ }
+ .order__close{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #B1B1B1;
+
+
+ }
+.order__item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10 0;
+    border-bottom: solid 1px #F2F2F3;
+
+
+}
+.order__item:first-child {/*first-child стилізує перший елемент серед групи однотипних елементів*/
+    border-top: solid 1px #F2F2F3;
+}
+.order__image{
+  width: 64px;
+  height: 52px;
+  border-radius: 8px;  
+
+}
+.order__product{
+ flex-grow: 1;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+}
+
+
+.order__product-title{
+    font-weight: 400px;
+    margin-bottom: 1px;
+}
+.order__product-weight{
+color: #B1B1B1;
+margin-bottom: 6px;
+
+}
+.order__product-price{
+color: #000000;
+
+}
+
+@media(min-width:768px){
+    .order{
+        width:145px;
+        max-width: 300px;
+        transition: width 0.06s ease-in-out;
+        
+
+    }
+    .order.order_open{
+        width: 300px;
+
+    }
+
+}
+@media(min-width:1024px){
+    .order {
+        width: 300px;
+    }
+    .order_wrapper{ 
+        position: unset;
+        padding: 24px 16px;
+    }
+    .order__title{
+        font-size: 24px;
+    
+    }
+    .order__count{
+        width: 41px;
+        height:20px;
+        font-size: 12px;
+    }
+    .order__close{
+        display:none;
+
+    }
+    .order_wrap_list{
+        display:block;
+        margin-bottom: 16px;
+    
+    }
+    .order_wrap-title{
+        margin-bottom: 12px;
+    }
+    .order_total{
+        font-size: 16px;
+        margin-bottom: 24px;
+     }
+     .order__submit{
+        padding: 11px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        margin-bottom: 8px;
+     }
+     
+     .order__apeal{
+        font-size: 12px;
+     }
+     .order__item {
+        padding: 15px 0;
+     }
+
+}

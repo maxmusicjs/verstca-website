@@ -1,0 +1,61 @@
+@import'normalize.css';
+@import'fonts.css';
+@import'default.css';
+@import'navigation.css';
+@import'catalog.css';
+@import'order.css';
+@import'count.css';
+@import'product.css';
+@import'footer.css';
+@import'modal.css';
+@import'modal-product.css';
+@import'ingredients.css';
+@import'modal-delivery.css';
+.header{
+    background-image: url("data:image/svg+xml,%3Csvg id='header' width ='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='100' cy='100' r='100' fill='%23ffAb08'/%3E%3C/svg%3E");
+    background-size: 611px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 24 0 30px;
+    margin-bottom: 30px;
+} 
+.header_logo{
+    width: 150px;
+    color: #fff;
+    margin: 0 auto 24px;
+    
+        
+}
+.header_title-container{
+  padding-bottom: 246px;
+  background: url('../img/pic.png') bottom/227px no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+.header_title{
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 120%;
+}
+.header_title-text{
+  display: block  ;
+}
+.header_title-text_red{
+  color:#FF5C00 ;
+
+
+}
+.header_appeal{
+  font-size: 12px;
+  line-height: 16px;
+                
+
+}
+
+
+
+
+
+
+

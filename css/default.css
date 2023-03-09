@@ -1,0 +1,167 @@
+html{
+   --container: 300px;
+   --padding-container: 10px;
+   box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+
+
+}
+body {
+    font-family: 'Nunito';/*шрифи*/
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #F9F9F9;
+    position: relative;
+    overflow-x: hidden;
+}
+img, svg {
+    display: block;
+    max-width: 100%;/*максимальна  ширина це запобігає первищиню використаного заначення це більше потрібно для svg*/
+    max-height: 100%;/*максимальна  висота це запобігає первищиню використаного заначення це більше потрібно для svg*/
+    height: auto;/*це більше потрібно для img*/
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+#container{
+    max-width: calc(var(--container) + var(--padding-container) * 2);
+    padding: 0 var(--padding-container);
+    margin: 0 auto;
+    
+}
+a{
+    text-decoration: none;/*прибирання рисок*/
+    color: inherit;/*прибирання кольори синього */
+}
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p, figure {
+    margin: 0;
+
+}
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.visually-hidden{
+    position: fixed;
+    transform: scale(0);
+}
+.currency {
+    font-weight: 400;/*встановлює щільність шрифту*/
+
+}
+@media(min-width: 480px){
+    html {
+        --container:640px;
+    }
+
+}
+@media(min-width: 768px){
+    html {
+        --padding-container:64px;
+    }
+
+}
+@media(min-width: 1024px){
+    html {
+        --container:960px;
+        --padding-container:32px;
+        padding-bottom: 40px;
+
+    }
+}
+@media(min-width: 1360px){
+    html {
+        --container:1290px;
+        
+    }
+}
+@media(min-width: 480px){
+    .header{
+      background-size: 1400px;
+      padding-bottom: 44px;
+  
+    }
+    .header_container{
+        max-width: 480px;
+    }
+    .header_title-container{
+        padding-left: 200px;
+        padding-bottom: 0 ;
+        padding-top: 27px;
+        text-align: left;
+        background-position: left;
+        background-size: contain;
+        min-height: 190px;
+        
+    }
+} 
+@media(min-width: 768px){
+    .header{
+        background-size: 2540px;
+    }
+    .header_container{
+        max-width: calc(562px + var (--padding-container)* 2);
+    }
+    .header_title-container {
+        padding-left: 237px;
+        min-height: 229px;
+    }
+    .header_title {
+        font-size: 36px; 
+        margin-bottom: 26px;
+
+    }
+}
+@media(min-width: 1024px){
+    .header{
+        background-size: 2880px;
+        padding-bottom: 63px;
+    }
+    .header_container{
+        max-width: calc(764px + var (--padding-container)* 2);
+    }
+    .header_title-container {
+        padding-top: 46px;
+        padding-left: 326px;
+        min-height: 326px;
+    }
+    .header_title {
+        font-size: 50px; 
+        margin-bottom: 52px;
+
+    }
+    .header_appeal{
+        font-size:16px;
+        line-height: 22px;
+
+    }
+
+}
+    @media(min-width: 1360px){
+        .header_container{
+            max-width: calc(784px + var (--padding-container)* 2);
+
+        }
+        .header_title-container {
+            padding-left: 346px;
+            margin-bottom: 37px;
+            
+        }
+    }

@@ -1,0 +1,42 @@
+.ingredients__title{
+    font-weight: 600px;
+    font-size: 10px;
+   /*line-height: 130px;*/
+    margin-bottom:4px;
+    /*  було margin-bottom:24px;*/
+}
+.ingredients__list{
+    font-weight: 400x ;
+    font-size: 10px;
+    line-height: 130%;
+    margin-bottom:4px;
+
+}
+.ingredients__item{
+    margin-bottom: 2px;
+
+}
+/*last-child знаходить будь-який елемент, 
+що є останнім у його батька.*/
+.ingredients__item:last-child{
+    margin-bottom: 0;
+}
+.ingredients__colories{
+    font-weight: 400x ;
+    font-size: 10px;
+    line-height: 130%;
+    color: #b1b1b1;
+
+}
+@media(min-width:1024px){
+.ingredients__title,
+.ingredients__list,
+.ingredients__colories{
+    font-size: 12px;
+
+}
+
+
+}
+
+
